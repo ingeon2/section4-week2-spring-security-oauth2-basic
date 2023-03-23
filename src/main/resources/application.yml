@@ -15,6 +15,13 @@ spring:
   sql:
     init:
       data-locations: classpath*:db/h2/data.sql
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 474027031001-m5ebul4bpafek08vom7j0m4rk02vdks1.apps.googleusercontent.com           # (1)
+            clientSecret: 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  # (2)
 logging:
   level:
     org:
@@ -28,3 +35,4 @@ server:
 mail:
   address:
     admin: admin@gmail.com
+

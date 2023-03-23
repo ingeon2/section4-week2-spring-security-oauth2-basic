@@ -16,7 +16,13 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    // HTML 화면을 구성하기 위한 템플릿인 타임리프(Thymeleaf)를 추가
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    // Hello OAuth 2 애플리케이션은 Spring Security 기반의 애플리케이션이므로 (2)와 같이 spring-boot-starter-security를 추가
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+    // Hello OAuth 2 애플리케이션은 구글의 OAuth 2 시스템을 이용하는 OAuth 2 클라이언트이므로 클라이언트로써의 역할을 하기 위해 spring-boot-starter-oauth2-client를 추가
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
     annotationProcessor 'org.projectlombok:lombok'
