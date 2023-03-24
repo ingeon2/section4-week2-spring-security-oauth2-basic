@@ -22,6 +22,10 @@ spring:
           google:
             clientId: 474027031001-m5ebul4bpafek08vom7j0m4rk02vdks1.apps.googleusercontent.com           # (1)
             clientSecret: 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  # (2)
+            scope:
+              - email
+              - profile
+              # scope 값을 직접 지정하면 해당 범위만큼의 Resource를 Client(백엔드 애플리케이션)에 제공
 logging:
   level:
     org:
@@ -35,4 +39,9 @@ server:
 mail:
   address:
     admin: admin@gmail.com
+jwt:
+  key:
+    secret: ${JWT_SECRET_KEY}               # 민감한 정보는 시스템 환경 변수에서 로드한다.
+  access-token-expiration-minutes: 30
+  refresh-token-expiration-minutes: 420
 

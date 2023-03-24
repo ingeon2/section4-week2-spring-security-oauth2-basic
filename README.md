@@ -60,3 +60,7 @@ OAuth2AuthorizedClientService를 이용해서
 OAuth2AuthorizedClient 가 보유하고 있는 Access Token에 접근할 수 있다.  
 OAuth2AuthorizedClientService의 loadAuthorizedClient("google", authentication.getName())를 호출하면  
 OAuth2AuthorizedClientRepository를 통해 OAuth2AuthorizedClient 객체를 로드할 수 있다.  
+여기까지는 그냥 OAuth2사용 알아보는 것.    
+  
+  
+JWT와 OAut2를 결합시키기 위해 oauth2_jwt 패키지 생성.  
